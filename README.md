@@ -186,7 +186,7 @@ After the ping, flow rules are installed on the switch `s1`. The empty output sh
 ## Proof of Execution — Screenshots
 
 ### Screenshot 1 — Successful Ping (h1 → h2)
-![Ping h1 to h2](screenshots/ping_h1_h2.png)
+![Ping h1 to h2](WhatsApp Image 2026-04-15 at 16.58.18.jpeg)
 
 Demonstrates 0% packet loss between h1 (10.0.0.1) and h2 (10.0.0.2), confirming ARP resolution and flow rule installation by the POX controller.
 
