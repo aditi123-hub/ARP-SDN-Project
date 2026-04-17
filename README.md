@@ -233,13 +233,3 @@ Wireshark capture filtered on `arp` showing the complete ARP exchange:
 This confirms that ARP requests are intercepted and responded to by the SDN controller (proxy ARP).
 
 ---
-
-## References
-
-1. **POX SDN Controller Documentation** — [https://noxrepo.github.io/pox-doc/html/](https://noxrepo.github.io/pox-doc/html/)
-2. **Mininet Project** — Lantz, B., Heller, B., & McKeown, N. (2010). *A network in a laptop: rapid prototyping for software-defined networks*. HotNets-IX. [http://mininet.org](http://mininet.org)
-3. **OpenFlow Specification** — Open Networking Foundation. *OpenFlow Switch Specification, Version 1.0*. [https://opennetworking.org/wp-content/uploads/2013/04/openflow-spec-v1.0.0.pdf](https://opennetworking.org/wp-content/uploads/2013/04/openflow-spec-v1.0.0.pdf)
-4. **RFC 826 — An Ethernet Address Resolution Protocol** — Plummer, D. C. (1982). [https://datatracker.ietf.org/doc/html/rfc826](https://datatracker.ietf.org/doc/html/rfc826)
-5. **Wireshark User Guide** — [https://www.wireshark.org/docs/wsug_html_chunked/](https://www.wireshark.org/docs/wsug_html_chunked/)
-6. **Open vSwitch Documentation** — [https://docs.openvswitch.org/en/latest/](https://docs.openvswitch.org/en/latest/)
-7. **McCauley, J. et al.** *POX: A Python-based OpenFlow Controller*. [https://github.com/noxrepo/pox](https://github.com/noxrepo/pox)
