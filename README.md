@@ -186,42 +186,42 @@ After the ping, flow rules are installed on the switch `s1`. The empty output sh
 ## Proof of Execution — Screenshots
 
 ### Screenshot 1 — Successful Ping (h1 → h2)
-![Ping h1 to h2](WhatsApp Image 2026-04-15 at 16.58.18.jpeg)
+![Ping h1 to h2](WhatsApp%20Image%202026-04-15%20at%2016.58.18.jpeg)
 
 Demonstrates 0% packet loss between h1 (10.0.0.1) and h2 (10.0.0.2), confirming ARP resolution and flow rule installation by the POX controller.
 
 ---
 
 ### Screenshot 2 — POX Controller with ARP Handler
-![POX Controller](screenshots/pox_controller.png)
+![POX Controller](WhatsApp%20Image%202026-04-15%20at%2016.58.39.jpeg)
 
 Shows the POX controller running with `forwarding.l2_learning` and `misc.arp_handler` modules. The controller learns host mappings and sends ARP replies directly.
 
 ---
 
 ### Screenshot 3 — Ping to Unreachable Host (10.0.0.99)
-![Ping unreachable host](screenshots/ping_unreachable.png)
+![Ping unreachable host](WhatsApp%20Image%202026-04-15%20at%2017.04.10.jpeg)
 
 Pinging a non-existent IP results in 100% packet loss with "Destination Host Unreachable" messages, validating correct ARP/ICMP error handling.
 
 ---
 
 ### Screenshot 4 — iperf Bandwidth Test
-![iperf test](screenshots/iperf_test.png)
+![iperf test](WhatsApp%20Image%202026-04-15%20at%2017.04.34.jpeg)
 
 h2 connects to h1's iperf server and measures ~127 Gbits/sec throughput over 10 seconds, confirming the data path is fully operational.
 
 ---
 
 ### Screenshot 5 — Flow Table (`ovs-ofctl dump-flows s1`)
-![Flow table](screenshots/flow_table.png)
+![Flow table](WhatsApp%20Image%202026-04-15%20at%2017.04.48.jpeg)
 
 Output of `ovs-ofctl dump-flows s1` after the SDN controller connects to the switch. Flow entries are dynamically installed by the controller upon the first packet-in event.
 
 ---
 
 ### Screenshot 6 — Wireshark ARP Capture
-![Wireshark ARP](screenshots/wireshark_arp.png)
+![Wireshark ARP](WhatsApp%20Image%202026-04-15%20at%2017.16.25.jpeg)
 
 Wireshark capture filtered on `arp` showing the complete ARP exchange:
 - Frame 5: h1 broadcasts "Who has 10.0.0.2? Tell 10.0.0.1"
