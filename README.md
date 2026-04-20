@@ -177,9 +177,9 @@ The iperf test reports ~127 Gbits/sec (loopback/virtual environment), confirming
 
 ---
 
-### 5. Flow Table — `ovs-ofctl dump-flows s1`
+### 5. Flow Table — `ovs-ofctl -O OpenFlow10 dump-flows s1`
 
-After the ping, flow rules are installed on the switch `s1`. The empty output shown before ping is expected — flow rules are populated dynamically by the controller after the first ARP/ICMP exchange.
+This command displays dynamically installed flow rules after traffic generation. The output shows ARP and ICMP match-action entries, packet counters, timeouts, and forwarding actions between switch ports.
 
 ---
 
@@ -213,8 +213,8 @@ h2 connects to h1's iperf server and measures ~127 Gbits/sec throughput over 10 
 
 ---
 
-### Screenshot 5 — Flow Table (`ovs-ofctl dump-flows s1`)
-![Flow table](8b9425f9-1b66-426d-a082-2437d481cb80.png)
+### Screenshot 5 — Flow Table (`ovs-ofctl -O OpenFlow10 dump-flows s1`)
+![Flow table]()
 
 Output of `ovs-ofctl dump-flows s1` after the SDN controller connects to the switch. Flow entries are dynamically installed by the controller upon the first packet-in event.
 
