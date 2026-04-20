@@ -214,9 +214,9 @@ h2 connects to h1's iperf server and measures ~127 Gbits/sec throughput over 10 
 ---
 
 ### Screenshot 5 — Flow Table (`ovs-ofctl -O OpenFlow10 dump-flows s1`)
-![Flow table]()
+![Flow table](WhatsApp%Image%2026-04-20%at%10.40.23.jpeg)
 
-Output of `ovs-ofctl dump-flows s1` after the SDN controller connects to the switch. Flow entries are dynamically installed by the controller upon the first packet-in event.
+Output of `ovs-ofctl dump-flows s1` showing dynamically installed ARP and ICMP flow entries after traffic is generated. The controller adds these rules when packets are first sent to the switch.
 
 ---
 
